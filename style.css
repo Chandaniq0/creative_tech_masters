@@ -43,6 +43,31 @@ p{
     margin: 40px 0;
 }
 
+button.normal{    /* button's global style add .name to compare among buttons/ */
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s; /*as we have to add hover effect*/
+}
+
+button.white{    /* /button's global style add .name to compare among buttons*/
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;  /*as we have to add hover effect*/
+}
+
 body{
     width: 100%;
 }
@@ -116,7 +141,7 @@ body{
 
 
 #hero h4{
-     margin-left: 20px; /* /Left margins are our choices in h1, h2, h4, h6, button and p/ */
+    margin-left: 20px;  /*Left margins are our choices in h1, h2, h4, h6, button and p*/
     padding-bottom: 15px;
 }
 
@@ -270,4 +295,98 @@ body{
     position: absolute;
     bottom: 20px;
     right: 10px;
+}
+
+#banner{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("banner.jpeg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: #ef3636;
+}
+
+#banner button:hover{
+    background: #188178;
+    color: #fff;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("banner.jpeg");
+    min-width: 580px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding:30px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url("banner.jpeg");
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+
+}
+
+#sm-banner .banner-box:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("banner.jpeg");
+    min-width: 500px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
 }
